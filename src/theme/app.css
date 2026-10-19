@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #e7ebf2; color: #0e172a; }
+.signup-shell { min-height: 100%; max-width: 358px; margin: 0 auto; overflow: hidden; border-radius: 0 0 28px 28px; background: #f9fbff; }
+.topbar { height: 65px; display: flex; align-items: center; gap: 14px; padding: 22px 15px 0; border-bottom: 1px solid #dbe5f5; }
+.topbar h1 { margin: 0; font-size: 16px; font-weight: 600; line-height: 25px; }
+.back-button { width: 18px; height: 18px; padding: 0; border: 0; color: #1664eb; background: transparent; font-size: 18px; display: grid; place-items: center; }
+.signup-form { padding: 33px 20px 36px; }
+.signup-form h2 { margin: 0; text-align: center; font-size: 20px; line-height: 29px; font-weight: 700; }
+.intro { margin: 0 0 19px; color: #63758c; text-align: center; font-size: 10px; line-height: 20px; }
+.form-field { --background: transparent; --padding-start: 0; --inner-padding-end: 0; --min-height: 68px; margin: 0; }
+.form-field ion-label { margin: 0 0 5px; color: #0e172a; font-size: 11px; line-height: 20px; font-weight: 500; }
+.input-wrap { height: 44px; width: 100%; display: flex; align-items: center; gap: 11px; padding: 0 11px; border: 1px solid #dbe5f5; border-radius: 9px; background: #fff; }
+.input-wrap ion-icon { flex: 0 0 17px; color: #1664eb; font-size: 17px; }
+.input-wrap ion-input { --padding-start: 0; --padding-end: 0; color: #0e172a; font-size: 11px; }
+.input-wrap ion-input::part(native)::placeholder { color: #63758c; opacity: 1; }
+.primary-button { --background: #1664eb; --border-radius: 10px; height: 44px; margin: 12px 0 0; font-size: 12px; font-weight: 600; text-transform: none; }
+.login-link { display: block; width: 100%; margin: 14px 0 0; padding: 0; border: 0; background: transparent; color: #1664eb; font: 500 11px/20px inherit; text-align: center; }
+.error-message { margin: 2px 0 0; font-size: 11px; }
+@media (min-width: 500px) { .signup-shell { margin-top: 24px; min-height: 844px; border-radius: 28px; box-shadow: 0 12px 36px rgb(14 23 42 / 12%); } }

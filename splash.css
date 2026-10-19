@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; min-height: 100%; background: #e7ebf2; }
+.splash-screen { position: relative; min-height: 100vh; max-width: 358px; margin: 0 auto; overflow: hidden; border-radius: 0 0 28px 28px; background: #f9fbff; color: #0e172a; }
+.status-bar { position: absolute; inset: 9px 13px auto; z-index: 2; display: flex; justify-content: space-between; align-items: center; font: 600 10px/20px Inter, sans-serif; }
+.status-bar ion-icon { font-size: 20px; }
+.splash-brand { position: absolute; top: 169px; left: 0; width: 100%; text-align: center; }
+.splash-logo { display: block; width: 53.2px; height: 53.2px; margin: 0 auto 5px; }
+.splash-brand h1 { margin: 0; color: #0c429b; font: 700 26.6px/34.6px Inter, sans-serif; }
+.splash-brand p { margin: 2px auto 0; color: #63758c; font: 400 11.4px/14px Inter, sans-serif; }
+.splash-colors { position: absolute; left: -2px; bottom: -1px; width: 404px; height: 342px; max-width: none; }
+.splash-ready { display: grid; place-items: center; color: #0c429b; font: 700 26px Inter, sans-serif; }

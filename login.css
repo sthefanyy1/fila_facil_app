@@ -1,0 +1,24 @@
+.login-screen { position: relative; min-height: 100vh; max-width: 358px; margin: 0 auto; overflow: hidden; border-radius: 0 0 28px 28px; background: #f9fbff; color: #0e172a; padding: 63px 28px 22px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.login-status { position: absolute; top: 9px; left: 13px; right: 13px; display: flex; justify-content: space-between; font-size: 10px; font-weight: 600; line-height: 20px; }
+.login-logo { display: block; width: 42px; height: 42px; margin: 0 auto 1px; }
+.login-screen h1 { margin: 0; color: #0c429b; text-align: center; font-size: 25px; line-height: 33px; font-weight: 700; }
+.login-screen h2 { margin: 24px 0 0; text-align: center; font-size: 14px; line-height: 22px; font-weight: 600; }
+.login-subtitle { margin: 2px 0 24px; color: #63758c; text-align: center; font-size: 10px; line-height: 20px; }
+.login-field { margin-bottom: 0; }
+.login-field > label { display: block; margin: 0 0 4px; font-size: 11px; line-height: 20px; font-weight: 500; }
+.login-input-wrap { display: flex; align-items: center; height: 46px; gap: 10px; padding: 0 11px; border: 1px solid #dbe5f5; border-radius: 9px; background: #fff; }
+.login-input-wrap > img { width: 18px; height: 18px; flex: 0 0 18px; }
+.login-input-wrap input { min-width: 0; flex: 1; border: 0; outline: 0; background: transparent; color: #0e172a; font: 400 11px/20px inherit; }
+.login-input-wrap input::placeholder { color: #63758c; opacity: 1; }
+.password-field { margin-top: 0; }
+.password-field .login-input-wrap button { display: grid; width: 16px; height: 16px; padding: 0; border: 0; background: transparent; place-items: center; }
+.password-field .login-input-wrap button img { width: 16px; height: 16px; }
+.forgot-password { display: block; margin: 8px 0 34px auto; padding: 0; border: 0; background: transparent; color: #1664eb; font: 500 11px/20px inherit; }
+.login-primary { width: 100%; height: 46px; border: 0; border-radius: 10px; background: #1664eb; color: #fff; font: 600 12px/20px inherit; }
+.login-divider { display: flex; align-items: center; gap: 0; margin-top: 27px; color: #63758c; font-size: 11px; }
+.login-divider span { height: 1px; flex: 1; background: #dbe5f5; }
+.login-divider b { padding: 0 9px; font-weight: 400; }
+.new-account { margin: 20px 0 0; text-align: center; font-size: 11px; line-height: 20px; }
+.create-account { display: block; width: 100%; margin-top: 3px; padding: 0; border: 0; background: transparent; color: #1664eb; font: 500 11px/20px inherit; }
+.login-footer { position: absolute; right: 28px; bottom: 20px; left: 28px; margin: 0; color: #63758c; text-align: center; font-size: 10px; line-height: 20px; }
+.login-error { margin: -24px 0 10px; color: #c62828; text-align: center; font-size: 10px; }
