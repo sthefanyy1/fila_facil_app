@@ -17,5 +17,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "external-modules.d.ts", "splash-entry.tsx", "login-screen.tsx", "signup-screen.tsx"]
+  "include": ["src", "external-modules.d.ts"]
 }

@@ -10,7 +10,4 @@ import './theme/app.css';
 import App from './App';
 
 setupIonicReact();
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode><App /></React.StrictMode>,
-);
+ReactDOM.createRoot(document.getElementById('root')!).render(<React.StrictMode><App /></React.StrictMode>);

@@ -1,6 +1,6 @@
 import { FormEvent, useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from './src/lib/firebase';
+import { auth } from '../lib/firebase';
 import './login.css';
 import logo from './login-logo.svg';
 import companyIcon from './login-company.svg';
