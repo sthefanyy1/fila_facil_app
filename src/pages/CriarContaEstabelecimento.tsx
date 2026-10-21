@@ -6,14 +6,14 @@ import personIcon from './signup-person.svg';
 import mailIcon from './signup-mail.svg';
 import phoneIcon from './signup-phone.svg';
 
-type Props = { onBack: () => void; onLogin: () => void };
+type Props = { onBack: () => void; onLogin: () => void; onContinue: () => void };
 type Values = { company: string; cnpj: string; owner: string; email: string; phone: string };
 
-export default function SignupScreen({ onBack, onLogin }: Props) {
+export default function SignupScreen({ onBack, onLogin, onContinue }: Props) {
   const [values, setValues] = useState<Values>({ company: '', cnpj: '', owner: '', email: '', phone: '' });
   const [submitted, setSubmitted] = useState(false);
   const set = (field: keyof Values) => (value: string) => setValues((current) => ({ ...current, [field]: value }));
-  const submit = (event: FormEvent) => { event.preventDefault(); sessionStorage.setItem('filafacil.businessDraft', JSON.stringify(values)); setSubmitted(true); };
+  const submit = (event: FormEvent) => { event.preventDefault(); sessionStorage.setItem('filafacil.businessDraft', JSON.stringify(values)); setSubmitted(true); onContinue(); };
   return <main className="signup-screen">
     <header className="signup-topbar"><button type="button" onClick={onBack} aria-label="Voltar"><img src={backIcon} alt="" /></button><h1>Criar conta da empresa</h1></header>
     <form onSubmit={submit}><h2>Crie a conta da sua empresa</h2><p className="signup-intro">Preencha seus dados para começar a usar o FilaFácil.</p>
