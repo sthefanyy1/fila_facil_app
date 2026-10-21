@@ -5,7 +5,7 @@ import { auth, db } from '../lib/firebase';
 import './dados-estabelecimento.css';
 import backIcon from './data-back.svg';
 import locationIcon from './data-location.svg';
-import lockIcon from './data-lock.svg';
+import lockIcon from './login-lock.svg';
 import eyeIcon from './data-eye-confirm.svg';
 const eyeConfirmIcon = eyeIcon;
 
