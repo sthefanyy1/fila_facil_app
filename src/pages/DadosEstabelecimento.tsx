@@ -6,8 +6,8 @@ import './dados-estabelecimento.css';
 import backIcon from './data-back.svg';
 import locationIcon from './data-location.svg';
 import lockIcon from './data-lock.svg';
-import eyeIcon from './data-eye.svg';
-import eyeConfirmIcon from './data-eye-confirm.svg';
+import eyeIcon from './data-eye-confirm.svg';
+const eyeConfirmIcon = eyeIcon;
 
 export default function DadosEstabelecimento({ onCreated, onBack }: { onCreated: () => void; onBack: () => void }) {
   const [address, setAddress] = useState('');
@@ -33,4 +33,4 @@ export default function DadosEstabelecimento({ onCreated, onBack }: { onCreated:
 }
 
 function DataField({ label, placeholder, icon, value, onChange }: { label: string; placeholder: string; icon: string; value: string; onChange: (v: string) => void }) { return <label className="data-field"><span>{label}</span><div><img src={icon} alt="" /><input placeholder={placeholder} value={value} onChange={(e) => onChange(e.target.value)} required /></div></label>; }
-function PasswordField({ label, placeholder, icon, eye, value, onChange, visible, onToggle }: { label: string; placeholder: string; icon: string; eye: string; value: string; onChange: (v: string) => void; visible: boolean; onToggle: () => void }) { return <label className="data-field"><span>{label}</span><div><img src={icon} alt="" /><input type={visible ? 'text' : 'password'} placeholder={placeholder} value={value} onChange={(e) => onChange(e.target.value)} required /><button type="button" onClick={onToggle} aria-label="Mostrar senha"><img src={eye} alt="" /></button></div></label>; }
+function PasswordField({ label, placeholder, icon, eye, value, onChange, visible, onToggle }: { label: string; placeholder: string; icon: string; eye: string; value: string; onChange: (v: string) => void; visible: boolean; onToggle: () => void }) { return <label className="data-field"><span>{label}</span><div><img src={icon} alt="" /><input type={visible ? 'text' : 'password'} placeholder={placeholder} value={value} onChange={(e) => onChange(e.target.value)} required /><button type="button" onClick={onToggle} aria-label={visible ? 'Ocultar senha' : 'Mostrar senha'}><img src={eye} alt="" /></button></div></label>; }

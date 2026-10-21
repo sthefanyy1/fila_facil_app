@@ -8,7 +8,7 @@ import mailIcon from './login-mail.svg';
 import lockIcon from './login-lock.svg';
 import eyeIcon from './login-eye.svg';
 
-export default function LoginScreen({ onCreateAccount, onForgotPassword }: { onCreateAccount?: () => void; onForgotPassword?: () => void }) {
+export default function LoginScreen({ onCreateAccount, onForgotPassword, onLogin }: { onCreateAccount?: () => void; onForgotPassword?: () => void; onLogin?: () => void }) {
   const [cnpj, setCnpj] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -20,8 +20,9 @@ export default function LoginScreen({ onCreateAccount, onForgotPassword }: { onC
     setError('');
     try {
       await signInWithEmailAndPassword(auth, email.trim(), password);
+      onLogin?.();
     } catch {
-      setError('Não foi possível entrar. Confira seus dados.');
+      setError('Conta não encontrada. Verifique o e-mail digitado ou crie uma nova conta.');
     }
   }
 
