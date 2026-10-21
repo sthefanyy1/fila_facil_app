@@ -8,7 +8,7 @@ import mailIcon from './login-mail.svg';
 import lockIcon from './login-lock.svg';
 import eyeIcon from './login-eye.svg';
 
-export default function LoginScreen({ onCreateAccount }: { onCreateAccount?: () => void }) {
+export default function LoginScreen({ onCreateAccount, onForgotPassword }: { onCreateAccount?: () => void; onForgotPassword?: () => void }) {
   const [cnpj, setCnpj] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -41,7 +41,7 @@ export default function LoginScreen({ onCreateAccount }: { onCreateAccount?: () 
           <button type="button" aria-label="Mostrar senha" onClick={() => setShowPassword((current) => !current)}><img src={eyeIcon} alt="" /></button>
         </div>
       </div>
-      <button type="button" className="forgot-password">Esqueceu sua senha?</button>
+      <button type="button" className="forgot-password" onClick={onForgotPassword}>Esqueceu sua senha?</button>
       {error && <p className="login-error">{error}</p>}
       <button className="login-primary" type="submit">Entrar</button>
     </form>
