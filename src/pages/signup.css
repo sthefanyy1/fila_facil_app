@@ -15,3 +15,4 @@
 .signup-primary { display: block; width: calc(100% - 40px); height: 44px; margin: 12px 20px 0; border: 0; border-radius: 10px; background: #1664eb; color: #fff; font: 600 12px/21px inherit; }
 .signup-login { display: block; width: calc(100% - 40px); margin: 14px 20px 0; padding: 0; border: 0; background: transparent; color: #1664eb; font: 500 11px/20px inherit; text-align: center; }
 .signup-feedback { margin: 2px 0 0; color: #1664eb; text-align: center; font-size: 10px; line-height: 15px; }
+.signup-error { margin: 4px 0 -2px; color: #c62828; text-align: center; font-size: 10px; line-height: 15px; }
