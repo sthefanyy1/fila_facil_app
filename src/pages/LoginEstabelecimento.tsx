@@ -8,7 +8,7 @@ import mailIcon from './login-mail.svg';
 import lockIcon from './login-lock.svg';
 import eyeIcon from './login-eye.svg';
 
-export default function LoginScreen({ onCreateAccount, onForgotPassword, onLogin }: { onCreateAccount?: () => void; onForgotPassword?: () => void; onLogin?: () => void }) {
+export default function LoginScreen({ onCreateAccount, onForgotPassword, onLogin, onClientLogin }: { onCreateAccount?: () => void; onForgotPassword?: () => void; onLogin?: () => void; onClientLogin?: () => void }) {
   const [cnpj, setCnpj] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -49,6 +49,7 @@ export default function LoginScreen({ onCreateAccount, onForgotPassword, onLogin
     <div className="login-divider"><span /> <b>ou</b> <span /></div>
     <p className="new-account">Ainda não possui uma conta?</p>
     <button type="button" className="create-account" onClick={onCreateAccount}>Criar conta da empresa</button>
+    <button type="button" className="create-account" onClick={onClientLogin}>Acessar como cliente</button>
     <p className="login-footer">FilaFácil • Gestão simples e organizada</p>
   </main>;
 }
