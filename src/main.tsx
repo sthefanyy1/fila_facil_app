@@ -8,6 +8,7 @@ import '@ionic/react/css/typography.css';
 import './theme/variables.css';
 import './theme/app.css';
 import './chrome-clean.css';
+import './responsive.css';
 import App from './App';
 
 setupIonicReact();

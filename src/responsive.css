@@ -1,0 +1,27 @@
+/* Responsive layout: preserves the Figma phone proportions on small screens and expands safely on larger viewports. */
+@media (min-width: 600px) {
+  .splash-screen,.login-screen,.recover-screen,.signup-screen,.data-screen,.created-screen,.account-choice,.client-page,.est-page,.home-screen{max-width:720px;min-height:100dvh;border-radius:20px;box-shadow:0 12px 36px rgb(14 23 42 / 12%)}
+  .splash-screen,.login-screen,.account-choice,.client-page{padding-left:clamp(28px,6vw,72px);padding-right:clamp(28px,6vw,72px)}
+  .login-screen form,.client-auth-form,.client-signup-form{max-width:520px;margin-left:auto;margin-right:auto}
+  .login-screen .login-divider,.login-screen .new-account,.login-screen .create-account{max-width:520px;margin-left:auto;margin-right:auto}
+  .client-page{overflow-y:auto;padding-bottom:40px}.client-nav,.bottom-nav{position:sticky;right:auto;bottom:auto;left:auto;width:100%;margin-top:32px;border-radius:12px}
+  .client-bottom{margin-top:clamp(40px,12vh,160px)}
+  .splash-brand{top:clamp(150px,24vh,230px)}.splash-colors{left:50%;transform:translateX(-50%);width:min(720px,100%);height:auto}
+  .home-screen{padding-left:clamp(28px,5vw,64px);padding-right:clamp(28px,5vw,64px);overflow-y:auto}.home-screen .home-header,.home-screen .home-stats,.home-screen>h2,.home-screen>.current-card,.home-screen>.next-list{max-width:620px;margin-left:auto;margin-right:auto}.bottom-nav{margin-left:calc(clamp(28px,5vw,64px) * -1);width:calc(100% + clamp(56px,10vw,128px))}
+  .est-page{padding-left:clamp(24px,5vw,64px);padding-right:clamp(24px,5vw,64px);overflow-y:auto}.est-page>*{max-width:620px;margin-left:auto;margin-right:auto}.est-header{max-width:none}
+}
+
+@media (orientation:landscape) and (max-height:600px) {
+  .splash-screen,.login-screen,.recover-screen,.signup-screen,.data-screen,.created-screen,.account-choice,.client-page,.est-page,.home-screen{min-height:100dvh;max-height:none;border-radius:0;overflow-y:auto}
+  .splash-brand{top:72px}.splash-colors{height:170px;width:auto}
+  .login-screen{padding-top:28px}.login-logo{width:34px;height:34px}.login-screen h2{margin-top:10px}.login-subtitle{margin-bottom:12px}.login-footer{position:static;margin-top:24px}
+  .account-intro{margin-top:36px!important}.account-options{margin-top:24px}
+  .client-auth-brand{margin-top:12px;margin-bottom:20px}.client-auth-brand b{margin-top:10px}.client-auth-field{margin-bottom:10px}.client-forgot{margin-bottom:12px}.client-divider{margin-top:16px}
+  .client-brand,.client-brand.compact{margin-top:24px;margin-bottom:14px}.client-bottom{margin-top:40px}.client-nav,.bottom-nav{position:sticky;margin-top:22px}
+  .recover-lock-icon,.recover-success-icon{margin-top:18px;margin-bottom:18px}
+}
+
+@media (max-width:359px) {
+  .client-page,.login-screen,.account-choice,.est-page,.home-screen{padding-left:14px;padding-right:14px}.client-nav,.bottom-nav{margin-left:-14px;width:calc(100% + 28px)}
+  .times{gap:6px}.client-service{padding-left:10px;padding-right:10px}
+}
