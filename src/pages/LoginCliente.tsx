@@ -1,1 +1,1 @@
-export { LoginCliente as default } from './ClienteFlow';
+export { LoginCliente as default } from './ClienteAuth';

@@ -1,1 +1,1 @@
-export { CriarContaCliente as default } from './ClienteFlow';
+export { CriarContaCliente as default } from './ClienteAuth';
