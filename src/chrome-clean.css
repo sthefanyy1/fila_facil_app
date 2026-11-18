@@ -1,0 +1,4 @@
+/* Status bars are supplied by the device/browser and are not part of the app artwork. */
+.status-bar,.login-status,.client-status,.client-auth-status,.est-status,.home-status,.account-status{display:none!important}
+.account-mark{display:none!important}
+.account-intro{margin-top:116px!important;text-align:center!important}
