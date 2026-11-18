@@ -1,4 +1,5 @@
 .login-screen { position: relative; min-height: 100vh; max-width: 358px; margin: 0 auto; overflow: hidden; border-radius: 0 0 28px 28px; background: #f9fbff; color: #0e172a; padding: 63px 28px 22px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.login-back { position: absolute; top: 34px; left: 16px; width: 22px; height: 22px; padding: 0; border: 0; background: transparent; color: #1664eb; font-size: 28px; line-height: 18px; }
 .login-status { position: absolute; top: 9px; left: 13px; right: 13px; display: flex; justify-content: space-between; font-size: 10px; font-weight: 600; line-height: 20px; }
 .login-logo { display: block; width: 42px; height: 42px; margin: 0 auto 1px; }
 .login-screen h1 { margin: 0; color: #0c429b; text-align: center; font-size: 25px; line-height: 33px; font-weight: 700; }
